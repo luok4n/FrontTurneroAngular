@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+  }
+
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    }
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}

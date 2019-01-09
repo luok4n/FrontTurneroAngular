@@ -1,0 +1,47 @@
+<style>
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    }
+
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+
+<h1>Reportes</h1>
+<h3>Turnos atendidos por el asesor</h3>
+<table>
+    <tr>
+      <th>Categoria</th>
+      <th>Turno</th>
+      <th>Asesor</th>
+    </tr>
+    <tr *ngFor="let turno of listurns">
+      <td>{{turno.categoria}}</td>
+      <td>{{turno.nro_turno}}</td>
+      <td>{{turno.asesor}}</td>
+    </tr>
+</table>
+
+<h3>Promedio de tiempo por categoria</h3>
+<a>Categoria 1: {{tiempo1}} minutos</a>
+<br><br>
+<a>Categoria 2: {{tiempo1}} minutos</a>
+<br><br>
+<a>Categoria 2: {{tiempo1}} minutos</a>

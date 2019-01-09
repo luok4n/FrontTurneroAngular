@@ -1,0 +1,14 @@
+<h2>Lista de turnos</h2>
+  
+<table>
+    <tr>
+      <th>Categoria</th>
+      <th>Turno</th>
+      <th>Asesor</th>
+    </tr>
+    <tr *ngFor="let turno of listurns">
+      <td>{{turno.categoria}}</td>
+      <td>{{turno.nro_turno}}</td>
+      <td>{{turno.asesor}}</td>
+    </tr>
+  </table>

@@ -1,0 +1,19 @@
+<div id="sidebar">
+    <mat-nav-list>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/turnos']">
+            <mat-icon class="sidenav-icon">input</mat-icon> {{ 'Turnos' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/dashboard']">
+            <mat-icon class="sidenav-icon">dashboard</mat-icon> {{ 'Dashboard' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/Reportes']">
+            <mat-icon class="sidenav-icon">bar_chart</mat-icon> {{ 'Reportes' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/pantalla']">
+            <mat-icon class="sidenav-icon">turned_in_not</mat-icon> {{ 'Pantalla turnera' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/ListTurn']">
+            <mat-icon class="sidenav-icon">view_headline</mat-icon> {{ 'Lista turnos' | translate }}
+        </a>
+    </mat-nav-list>
+</div>
